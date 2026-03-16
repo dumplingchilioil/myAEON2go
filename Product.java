@@ -1,4 +1,4 @@
-package com.example.myaeonapp;
+package com.myaeon2go;
 
 public class Product {
 
