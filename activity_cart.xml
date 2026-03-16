@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="@string/my_shopping_cart"
         android:textColor="#8A004F"
-        android:textSize="24sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
