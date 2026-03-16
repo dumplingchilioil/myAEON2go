@@ -1,4 +1,4 @@
-package com.example.myaeonapp;
+package com.myaeon2go;
 
 import java.util.ArrayList;
 
