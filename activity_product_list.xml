@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Product List"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:background="#8A004F"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <SearchView
+        android:id="@+id/searchProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search products"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerProducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
