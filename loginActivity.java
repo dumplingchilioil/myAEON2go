@@ -1,4 +1,4 @@
-package com.example.myaeontogo;
+package com.example.myaeon2go;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,20 +23,26 @@ public class loginActivity extends AppCompatActivity {
         TextView tvForgot = findViewById(R.id.textView3);
         TextView tvSignUp = findViewById(R.id.textView4);
 
+        // LOGIN ACTION: Navigate to Home Page (MainActivity)
         btnLogin.setOnClickListener(v -> {
-            String email = emailEt.getText().toString();
-            String pass = passEt.getText().toString();
+            String email = emailEt.getText().toString().trim();
+            String pass = passEt.getText().toString().trim();
 
-            // Simple check: If not empty, go to Profile
             if(!email.isEmpty() && !pass.isEmpty()) {
-                Intent intent = new Intent(loginActivity.this, viewProfileActivity.class);
+                // Navigate to MainActivity (Home)
+                Intent intent = new Intent(loginActivity.this, MainActivity.class);
                 startActivity(intent);
+
+                finish();
             } else {
-                Toast.makeText(this, "Please enter any email and password", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please enter email and password", Toast.LENGTH_SHORT).show();
             }
         });
 
+        // Navigate to Forgot Password screen
         tvForgot.setOnClickListener(v -> startActivity(new Intent(this, forgetPasswordActivity.class)));
+
+        // Navigate to Signup screen
         tvSignUp.setOnClickListener(v -> startActivity(new Intent(this, signupActivity.class)));
     }
 }
