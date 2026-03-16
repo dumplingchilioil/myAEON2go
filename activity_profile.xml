@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#8A004F"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Profile"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Profile Picture -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:background="@drawable/profilegradient"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/profile"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:background="@drawable/circle_bg_white"
+                android:padding="4dp"/>
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FATIMAH"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <!-- Profile Details -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="bold"
+                android:textColor="#333333"/>
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="example@email.com"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_change_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Email"
+                android:backgroundTint="#8A004F"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Mobile Number -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:textStyle="bold"
+                android:textColor="#333333"/>
+
+            <TextView
+                android:id="@+id/txt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+60 123 456 789"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_change_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Mobile Number"
+                android:backgroundTint="#8A004F"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Date of Birth -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textStyle="bold"
+                android:textColor="#333333"/>
+
+            <TextView
+                android:id="@+id/txt_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01/01/1990"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Gender -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textStyle="bold"
+                android:textColor="#333333"/>
+
+            <TextView
+                android:id="@+id/txt_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Race -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Race"
+                android:textStyle="bold"
+                android:textColor="#333333"/>
+
+            <TextView
+                android:id="@+id/txt_race"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Malay"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- View Order History Button -->
+            <Button
+                android:id="@+id/btn_view_orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Order History"
+                android:backgroundTint="#8A004F"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:backgroundTint="#8A004F"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
