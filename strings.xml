@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyAeon2Go</string>
+    <string name="view_profile">View Profile</string>
+    <string name="order_history">Order History</string>
+    <string name="logout1">Logout</string>
+    <string name="order_history3">Order History</string>
+    <string name="my_profile">My Profile</string>
+    <string name="perarasi_tamilarasu">FATIMAH</string>
+    <string name="change_email">Change Email</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="_60_123_456_789">+60 123 456 789</string>
+    <string name="_01_08_2006">01/08/2006</string>
+    <string name="female">Female</string>
+    <string name="race">Race</string>
+    <string name="malay">Malay</string>
+    <string name="logout">Logout</string>
+    <string name="order_histroy">Order Histroy</string>
+    <string name="profile">Profile</string>
+    <string name="menu">menu</string>
+    <string name="perarasi_tamilarasu1">FATIMAH</string>
+    <string name="myaeon2go">myAEON2go</string>
+    <string name="_150_00">$150.00</string>
+    <string name="order_12345">Order #12345</string>
+    <string name="item_1_item_2_item_3">Item 1, Item 2, Item 3</string>
+    <string name="_01_01_2026">01/01/2026</string>
+    <string name="_150_00m">$150.00</string>
+    <string name="_01_01_2026m">01/01/2026</string>
+    <string name="order_12345m">Order #12345</string>
+    <string name="item_1_item_2_item_3m">Item 1, Item 2, Item 3</string>
+</resources>
