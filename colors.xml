@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#8A004F</color> <!-- your main color -->
+    <color name="primary">#8A004F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="textBlue">#0000FF</color>
+</resources>
