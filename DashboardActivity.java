@@ -2,6 +2,7 @@ package com.example.myaeon2go;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class DashboardActivity extends AppCompatActivity {
@@ -10,12 +11,17 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        findViewById(R.id.btn_view_profile).setOnClickListener(v ->
+        // Buttons
+        View btnViewProfile = findViewById(R.id.btn_view_profile);
+        View btnOrderHistory = findViewById(R.id.btn_order_history);
+        View btnLogout = findViewById(R.id.btn_logout);
+
+        btnViewProfile.setOnClickListener(v ->
                 startActivity(new Intent(DashboardActivity.this, ProfileActivity.class)));
 
-        findViewById(R.id.btn_order_history).setOnClickListener(v ->
+        btnOrderHistory.setOnClickListener(v ->
                 startActivity(new Intent(DashboardActivity.this, OrderHistoryActivity.class)));
 
-        findViewById(R.id.btn_logout).setOnClickListener(v -> finish());
+        btnLogout.setOnClickListener(v -> finishAffinity());
     }
 }
