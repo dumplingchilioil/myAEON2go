@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F5F5"
@@ -24,7 +25,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="My Profile"
+                android:text="@string/my_profile1"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -43,21 +44,24 @@
                 android:id="@+id/profile_image"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/profile"
-                android:scaleType="centerCrop"
                 android:clipToOutline="true"
-                android:background="@drawable/circle_bg_white"
-                android:padding="4dp"/>
+                android:contentDescription="@string/profpic"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile"
+                tools:ignore="ContentDescription,ImageContrastCheck"
+                tools:targetApi="31" />
 
             <TextView
                 android:id="@+id/txt_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FATIMAH"
+                android:layout_marginTop="12dp"
+                android:text="@string/fatimah"
+                android:textColor="#FFEBEE"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="#FFFFFF"
-                android:layout_marginTop="12dp"/>
+                tools:ignore="HardcodedText,TextContrastCheck" />
         </LinearLayout>
 
         <!-- Profile Details -->
@@ -71,7 +75,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email"
+                android:text="@string/email"
                 android:textStyle="bold"
                 android:textColor="#333333"/>
 
@@ -79,7 +83,7 @@
                 android:id="@+id/txt_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="example@email.com"
+                android:text="@string/example_email_com"
                 android:padding="12dp"
                 android:background="#FFFFFF"
                 android:layout_marginTop="4dp"
@@ -89,7 +93,7 @@
                 android:id="@+id/btn_change_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Change Email"
+                android:text="@string/change_email1"
                 android:backgroundTint="#8A004F"
                 android:textColor="#FFFFFF"
                 android:layout_marginBottom="16dp"/>
@@ -98,7 +102,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mobile Number"
+                android:text="@string/mobile_number1"
                 android:textStyle="bold"
                 android:textColor="#333333"/>
 
@@ -106,17 +110,18 @@
                 android:id="@+id/txt_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="+60 123 456 789"
+                android:text="@string/_60_123_456_7891"
                 android:padding="12dp"
                 android:background="#FFFFFF"
                 android:layout_marginTop="4dp"
-                android:layout_marginBottom="8dp"/>
+                android:layout_marginBottom="8dp"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/btn_change_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Change Mobile Number"
+                android:text="@string/change_mobile_number1"
                 android:backgroundTint="#8A004F"
                 android:textColor="#FFFFFF"
                 android:layout_marginBottom="16dp"/>
@@ -125,15 +130,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Date of Birth"
+                android:text="@string/date_of_birth"
                 android:textStyle="bold"
-                android:textColor="#333333"/>
+                android:textColor="#333333"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/txt_dob"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="01/01/1990"
+                android:text="@string/_01_01_1990"
                 android:padding="12dp"
                 android:background="#FFFFFF"
                 android:layout_marginTop="4dp"
@@ -143,7 +149,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gender"
+                android:text="@string/gender"
                 android:textStyle="bold"
                 android:textColor="#333333"/>
 
@@ -151,7 +157,7 @@
                 android:id="@+id/txt_gender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Male"
+                android:text="@string/femalefemale"
                 android:padding="12dp"
                 android:background="#FFFFFF"
                 android:layout_marginTop="4dp"
@@ -161,7 +167,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Race"
+                android:text="@string/racerace"
                 android:textStyle="bold"
                 android:textColor="#333333"/>
 
@@ -169,7 +175,7 @@
                 android:id="@+id/txt_race"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Malay"
+                android:text="@string/malayq"
                 android:padding="12dp"
                 android:background="#FFFFFF"
                 android:layout_marginTop="4dp"
@@ -180,17 +186,18 @@
                 android:id="@+id/btn_view_orders"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="View Order History"
+                android:layout_marginBottom="16dp"
                 android:backgroundTint="#8A004F"
+                android:text="@string/view_order_history"
                 android:textColor="#FFFFFF"
-                android:layout_marginBottom="16dp"/>
+                tools:ignore="TouchTargetSizeCheck" />
 
             <!-- Logout Button -->
             <Button
                 android:id="@+id/btn_logout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Logout"
+                android:text="@string/logoutlogout"
                 android:backgroundTint="#8A004F"
                 android:textColor="#FFFFFF"
                 android:layout_marginBottom="16dp"/>
