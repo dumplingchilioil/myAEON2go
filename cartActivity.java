@@ -1,4 +1,4 @@
-package com.example.myaeontogo;
+package com.example.myaeon2go;
 
 import android.content.Intent;
 import android.os.Bundle;
