@@ -1,4 +1,4 @@
-package com.example.myaeontogo;
+package com.example.myaeon2go;
 
 public class CartItem {
     private String name;
