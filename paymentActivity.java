@@ -1,4 +1,4 @@
-package com.example.myaeontogo;
+package com.example.myaeon2go;
 
 import android.os.Bundle;
 import android.widget.Button;
